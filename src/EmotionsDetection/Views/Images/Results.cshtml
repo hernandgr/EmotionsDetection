@@ -1,0 +1,31 @@
+﻿@model IEnumerable<EmotionsDetection.Models.EmotionModel>
+
+@{
+    ViewBag.Title = "Results";
+}
+
+<h2>Results</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Face)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmotionsJson)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.Face)*@
+            <img src="@item.Face" style="max-width: 250px" />
+        </td>
+        <td>
+            <pre>@Html.Raw(item.EmotionsJson)</pre>
+        </td>
+    </tr>
+}
+
+</table>
