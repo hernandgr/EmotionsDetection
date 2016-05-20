@@ -26,13 +26,7 @@ namespace EmotionsDetection.Controllers
             var resultImages = await apiService.UploadAndDetectEmotions(file);
             
             return View("Results", resultImages);
-            //return null;
         }
-        //public ActionResult Results()
-        //{
-        //    ViewBag.ImageData = TempData["resultImageBase64"];
-        //    return View();
-        //}
 
         private string GetImageBase64String(byte[] resultImage)
         {
