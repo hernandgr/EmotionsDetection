@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using EmotionsDetection.Models;
+using Newtonsoft.Json;
+using System;
 using System.Linq;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web;
-using EmotionsDetection.Models;
-using Newtonsoft.Json;
 
 namespace EmotionsDetection.Services
 {

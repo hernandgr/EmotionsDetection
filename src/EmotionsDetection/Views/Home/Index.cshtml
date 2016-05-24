@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Emotions detection</h1>
+    <p class="lead">Using Microsoft Cognitive Services.</p>
+    <p><a href="http://microsoft.com/cognitive" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Images</h2>
+        <p>Recognize Emotions in images.</p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Images")">Try it</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>Text</h2>
+        <p>Detect sentiment, key phrases, topics, and language from your text.</p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Text")">Try it</a></p>
+    </div>
+</div>

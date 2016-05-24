@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace EmotionsDetection.Models
 {
@@ -11,6 +7,6 @@ namespace EmotionsDetection.Models
         [DataType(DataType.MultilineText)]
         public string Text { get; set; }
 
-        public double Score { get; set; }
+        public double? Score { get; set; }
     }
 }

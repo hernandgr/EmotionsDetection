@@ -27,11 +27,5 @@ namespace EmotionsDetection.Controllers
             
             return View("Results", resultImages);
         }
-
-        private string GetImageBase64String(byte[] resultImage)
-        {
-            var imageBase64 = Convert.ToBase64String(resultImage);
-            return $"data:image/png;base64, {imageBase64}";
-        }
     }
 }

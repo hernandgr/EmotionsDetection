@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Mvc;
-using EmotionsDetection.Models;
+﻿using EmotionsDetection.Models;
 using EmotionsDetection.Services;
+using System.Configuration;
+using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace EmotionsDetection.Controllers
 {
